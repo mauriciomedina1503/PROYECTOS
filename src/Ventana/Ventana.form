@@ -1,0 +1,2148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Ventana.Ventana">
+  <grid id="27dc6" binding="panelPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="850" height="646"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="92dc4" binding="panelPruebaConexion" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none" title="Prueba conexión"/>
+        <children>
+          <component id="db1cc" class="javax.swing.JButton" binding="pruebaConexionButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-14119079"/>
+              <font name="Microsoft JhengHei Light" size="16" style="1"/>
+              <foreground color="-65540"/>
+              <horizontalAlignment value="0"/>
+              <text value="Prueba Conexión"/>
+            </properties>
+            <clientProperties>
+              <hideActionText class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+          <component id="920b9" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Usuario:"/>
+            </properties>
+          </component>
+          <component id="33489" class="javax.swing.JTextField" binding="txtUsuarioBaseDeDatos">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <columns value="0"/>
+              <editable value="true"/>
+              <text value="sa"/>
+            </properties>
+          </component>
+          <component id="97b96" class="javax.swing.JPasswordField" binding="txtContraseñaBaseDeDatos">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="bc801" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Contraseña:"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <tabbedpane id="f6580" binding="panelPestañas">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-2827877"/>
+          <font name="Droid Sans Mono Dotted" size="16" style="1"/>
+          <foreground color="-16777216"/>
+          <name value=""/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="e7f8a" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Personal"/>
+            </constraints>
+            <properties>
+              <name value="Personal"/>
+              <toolTipText value=""/>
+              <verifyInputWhenFocusTarget value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="fe27d" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value=""/>
+                </properties>
+                <border type="none" title="Consultas"/>
+                <children>
+                  <component id="c583b" class="javax.swing.JButton" binding="personalRegistrarButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-11106172"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Registrar"/>
+                    </properties>
+                  </component>
+                  <component id="4de21" class="javax.swing.JButton" binding="personalActualizarButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-9470567"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Actualizar"/>
+                    </properties>
+                  </component>
+                  <component id="92fae" class="javax.swing.JButton" binding="personalEliminarButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-7709849"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Eliminar"/>
+                    </properties>
+                  </component>
+                  <component id="1aa73" class="javax.swing.JButton" binding="personalListarButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-5931329"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Listar"/>
+                    </properties>
+                  </component>
+                  <component id="94204" class="javax.swing.JButton" binding="personalBuscarButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-5723546"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Buscar"/>
+                    </properties>
+                  </component>
+                  <component id="fa76f" class="javax.swing.JButton" binding="limpiarCamposPersonal">
+                    <constraints/>
+                    <properties>
+                      <background color="-4602936"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Limpiar"/>
+                      <toolTipText value="Limpia los campos de texto."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <scrollpane id="5b6e6">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="true"/>
+                </properties>
+                <border type="none" title="Tabla"/>
+                <children>
+                  <component id="fbd21" class="javax.swing.JTable" binding="tablaPersonal">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <grid id="9a22f" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="Datos"/>
+                <children>
+                  <component id="235bc" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="DNI:"/>
+                    </properties>
+                  </component>
+                  <component id="cb3f2" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Nombre:"/>
+                    </properties>
+                  </component>
+                  <component id="d0ddf" class="javax.swing.JTextField" binding="txtPersonalNombre">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="db701" class="javax.swing.JTextField" binding="txtPersonalDNI">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="b5c7f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Fecha Registro:"/>
+                    </properties>
+                  </component>
+                  <component id="36713" class="javax.swing.JTextField" binding="txtPersonalFechaRegistro">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="fbc9d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Fecha Nacimiento:"/>
+                    </properties>
+                  </component>
+                  <component id="caa49" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Cargo:"/>
+                    </properties>
+                  </component>
+                  <component id="9f119" class="javax.swing.JTextField" binding="txtPersonalFechaNacimiento">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="2f58b" class="javax.swing.JTextField" binding="txtPersonalCargo">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="8a9f2" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Productos Disponibles"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <tabbedpane id="7cb37" binding="tabbedPane1" default-binding="true">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-6762561"/>
+                  <enabled value="true"/>
+                  <font name="Droid Sans Mono" size="16" style="0"/>
+                  <foreground color="-14408668"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="d0825" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Camisas"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="6a21d" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="9173f" class="javax.swing.JButton" binding="botonRegistrarCamisa">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="12040" class="javax.swing.JButton" binding="botonActualizarCamisa">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="c84d7" class="javax.swing.JButton" binding="botonEliminarCamisa">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="f6db" class="javax.swing.JButton" binding="botonListarCamisa">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="3a00a" class="javax.swing.JButton" binding="botonBuscarCamisa">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="9b0b6" class="javax.swing.JButton" binding="botonLimpiarCamposCamisa">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="c2491">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="3d1c6" class="javax.swing.JTable" binding="tablaCamisas">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <grid id="42b0" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="e027b" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="b028a" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="a1158" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="be619" class="javax.swing.JTextField" binding="txtEstiloCamisa">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="15202" class="javax.swing.JTextField" binding="txtPrecioCamisa">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="9ba37" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="e53d0" class="javax.swing.JTextField" binding="txtColorCamisa">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="a465d" class="javax.swing.JTextField" binding="txtCodigoCamisa">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="eaf81" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Vestidos"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="59295" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="d2670" class="javax.swing.JButton" binding="botonRegistrarVestido">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="279cb" class="javax.swing.JButton" binding="botonActualizarVestido">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="c1a14" class="javax.swing.JButton" binding="botonEliminarVestido">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="4fa49" class="javax.swing.JButton" binding="botonListarVestido">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="7f210" class="javax.swing.JButton" binding="botonBuscarVestido">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="265cf" class="javax.swing.JButton" binding="botonLimpiarCamposVestido">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="e689a" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="91027" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="34194" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="de0b3" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="d4413" class="javax.swing.JTextField" binding="txtEstiloVestidos">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="760d6" class="javax.swing.JTextField" binding="txtPrecioVestidos">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="3c910" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="85909" class="javax.swing.JTextField" binding="txtColorVestidos">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="f399e" class="javax.swing.JTextField" binding="txtCodigoVestidos">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="1bf13">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="1197b" class="javax.swing.JTable" binding="tablaVestidos">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="3f33" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Corbatas"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="5a3ae" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="ffff5" class="javax.swing.JButton" binding="botonRegistrarCorbata">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="90a97" class="javax.swing.JButton" binding="botonActualizarCorbata">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="d3fed" class="javax.swing.JButton" binding="botonEliminarCorbata">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="abdb" class="javax.swing.JButton" binding="botonListarCorbata">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="9f7d7" class="javax.swing.JButton" binding="botonBuscarCorbata">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="9d1ce" class="javax.swing.JButton" binding="botonLimpiarCorbata">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="50286" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="d2043" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="219e8" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="d571b" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="dab9b" class="javax.swing.JTextField" binding="txtEstiloCorbatas">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="616d1" class="javax.swing.JTextField" binding="txtPrecioCorbatas">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="d381d" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="31cae" class="javax.swing.JTextField" binding="txtColorCorbatas">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="5c538" class="javax.swing.JTextField" binding="txtCodigoCorbatas">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="66c93">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="b19cc" class="javax.swing.JTable" binding="tablaCorbatas">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="df612" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Camisa sin mangas"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="84bdf" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="4968a" class="javax.swing.JButton" binding="botonRegistrarCamisaSinMangas">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="3e395" class="javax.swing.JButton" binding="botonActualizarCamisaSinMangas">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="a0962" class="javax.swing.JButton" binding="botonEliminarCamisaSinMangas">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="8f45d" class="javax.swing.JButton" binding="botonListarCamisaSinMangas">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="e1791" class="javax.swing.JButton" binding="botonBuscarCamisaSinMangas">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="af942" class="javax.swing.JButton" binding="botonLimpiarCamposCamisasSinMangas">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="22a73" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="b3944" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="cf79e" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="23dff" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="994be" class="javax.swing.JTextField" binding="txtEstiloCamisaSinMangas">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="f100e" class="javax.swing.JTextField" binding="txtPrecioCamisaSinMangas">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="79b90" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="6058b" class="javax.swing.JTextField" binding="txtColorCamisaSinMangas">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="c4bd2" class="javax.swing.JTextField" binding="txtCodigoCamisaSinMangas">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="62c07">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="b871b" class="javax.swing.JTable" binding="tablaCamisaSinMangas">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="df08c" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Falda"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="e7a5d" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="6cc12" class="javax.swing.JButton" binding="botonRegistrarFalda">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="fd7d5" class="javax.swing.JButton" binding="botonActualizarFalda">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="ac5d6" class="javax.swing.JButton" binding="botonEliminarFalda">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="b8748" class="javax.swing.JButton" binding="botonListarFalda">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="fb76c" class="javax.swing.JButton" binding="botonBuscarFalda">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="40e37" class="javax.swing.JButton" binding="botonLimpiarCamposFalda">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="d2c9a" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="86364" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="4fa56" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="3cf67" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="9664b" class="javax.swing.JTextField" binding="txtEstiloFaldas">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="36690" class="javax.swing.JTextField" binding="txtPrecioFaldas">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="77f79" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="9744f" class="javax.swing.JTextField" binding="txtColorFaldas">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="d0db9" class="javax.swing.JTextField" binding="txtCodigoFaldas">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="520">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="5b079" class="javax.swing.JTable" binding="tablaFaldas">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="b7da7" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Pantalones"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="24532" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="e6c46" class="javax.swing.JButton" binding="botonRegistrarPantalon">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="49a39" class="javax.swing.JButton" binding="botonActualizarPantalon">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="ce537" class="javax.swing.JButton" binding="botonEliminarPantalon">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="e7846" class="javax.swing.JButton" binding="botonListarPantalon">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="188ba" class="javax.swing.JButton" binding="botonBuscarPantalon">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="6d8f9" class="javax.swing.JButton" binding="botonLimpiarPantalon">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="4d57d" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="82247" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="26e81" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="8bb72" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="c55c7" class="javax.swing.JTextField" binding="txtEstiloPantalones">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="ca582" class="javax.swing.JTextField" binding="txtPrecioPantalones">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="6036e" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="6ca3b" class="javax.swing.JTextField" binding="txtColorPantalones">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="2442a" class="javax.swing.JTextField" binding="txtCodigoPantalones">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="a0ed2">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="68c8a" class="javax.swing.JTable" binding="tablaPantalones">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="db27" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Shorts"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="d0f9f" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="aad93" class="javax.swing.JButton" binding="botonRegistrarShort">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="682ca" class="javax.swing.JButton" binding="botonActualizarShort">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="36feb" class="javax.swing.JButton" binding="botonEliminarShort">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="62fb" class="javax.swing.JButton" binding="botonListarShort">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="94b0f" class="javax.swing.JButton" binding="botonBuscarShort">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="9672" class="javax.swing.JButton" binding="botonLimpiarShort">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="43acd" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="78793" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="d2393" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="9d7ec" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="9b536" class="javax.swing.JTextField" binding="txtEstiloShorts">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="a5617" class="javax.swing.JTextField" binding="txtPrecioShorts">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="d3fe8" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="4d9b3" class="javax.swing.JTextField" binding="txtColorShorts">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="1cabe" class="javax.swing.JTextField" binding="txtCodigoShorts">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="f9832">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="a04ef" class="javax.swing.JTable" binding="tablaShorts">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="cd4b" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Camisas formales"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="20fbd" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="bef5b" class="javax.swing.JButton" binding="botonRegistrarCamisaFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="d967b" class="javax.swing.JButton" binding="botonActualizarCamisaFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="c8713" class="javax.swing.JButton" binding="botonEliminarCamisaFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="9b3ad" class="javax.swing.JButton" binding="botonListarCamisaFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="971e2" class="javax.swing.JButton" binding="botonBuscarCamisaFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="83948" class="javax.swing.JButton" binding="botonLimpiarCamposCamisaFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="8a018" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="a8519" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="9a8b3" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="ab6b8" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="e226" class="javax.swing.JTextField" binding="txtEstiloCamisaFormal">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="8d287" class="javax.swing.JTextField" binding="txtPrecioCamisaFormal">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="98829" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="95b4d" class="javax.swing.JTextField" binding="txtColorCamisaFormal">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="d990f" class="javax.swing.JTextField" binding="txtCodigoCamisaFormal">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="b9f9b">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="592da" class="javax.swing.JTable" binding="tablaCamisasFormales">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="16dd5" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Pantalones formales"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="34331" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="349ed" class="javax.swing.JButton" binding="botonRegistrarPantalonFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="85aa9" class="javax.swing.JButton" binding="botonActualizarPantalonFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="d6a4e" class="javax.swing.JButton" binding="botonEliminarPantalonFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="89809" class="javax.swing.JButton" binding="botonListarPantalonFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="fc2c0" class="javax.swing.JButton" binding="botonBuscarPantalonFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="e7e19" class="javax.swing.JButton" binding="botonLimpiarCamposPantalonFormal">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="2a5b9" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="3e0c2" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="568a7" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="9a4f3" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="684b2" class="javax.swing.JTextField" binding="txtEstiloPantalonFormal">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="1ef36" class="javax.swing.JTextField" binding="txtPrecioPantalonFormal">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="2aa1d" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="d758a" class="javax.swing.JTextField" binding="txtColorPantalonFormal">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="6afe5" class="javax.swing.JTextField" binding="txtCodigoPantalonFormal">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="1e0f2">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="a673b" class="javax.swing.JTable" binding="tablaPantalonesFormales">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="18be" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="Telas"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="a58fe" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <name value=""/>
+                        </properties>
+                        <border type="none" title="Consultas"/>
+                        <children>
+                          <component id="d6af" class="javax.swing.JButton" binding="botonRegistrarTela">
+                            <constraints/>
+                            <properties>
+                              <background color="-11106172"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Registrar"/>
+                            </properties>
+                          </component>
+                          <component id="fb427" class="javax.swing.JButton" binding="botonActualizarTela">
+                            <constraints/>
+                            <properties>
+                              <background color="-9470567"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Actualizar"/>
+                            </properties>
+                          </component>
+                          <component id="c20be" class="javax.swing.JButton" binding="botonEliminarTela">
+                            <constraints/>
+                            <properties>
+                              <background color="-7709849"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Eliminar"/>
+                            </properties>
+                          </component>
+                          <component id="9219d" class="javax.swing.JButton" binding="botonListarTela">
+                            <constraints/>
+                            <properties>
+                              <background color="-5931329"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Listar"/>
+                            </properties>
+                          </component>
+                          <component id="b9e19" class="javax.swing.JButton" binding="botonBuscarTela">
+                            <constraints/>
+                            <properties>
+                              <background color="-5723546"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Buscar"/>
+                            </properties>
+                          </component>
+                          <component id="4f6fa" class="javax.swing.JButton" binding="botonLimpiarCamposTela">
+                            <constraints/>
+                            <properties>
+                              <background color="-4602936"/>
+                              <font name="Consolas" size="16"/>
+                              <foreground color="-1"/>
+                              <text value="Limpiar"/>
+                              <toolTipText value="Limpia los campos de texto."/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="3472" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Datos">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="fafde" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Código:"/>
+                            </properties>
+                          </component>
+                          <component id="b5a2d" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Precio:"/>
+                            </properties>
+                          </component>
+                          <component id="fb064" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Estilo:"/>
+                            </properties>
+                          </component>
+                          <component id="aa6c5" class="javax.swing.JTextField" binding="txtEstiloTelas">
+                            <constraints>
+                              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="94175" class="javax.swing.JTextField" binding="txtPrecioTelas">
+                            <constraints>
+                              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="b40ea" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="Color:"/>
+                            </properties>
+                          </component>
+                          <component id="6bd46" class="javax.swing.JTextField" binding="txtColorTelas">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <component id="c2ee2" class="javax.swing.JTextField" binding="txtCodigoTelas">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="f09a4">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none" title="Tabla"/>
+                        <children>
+                          <component id="f79af" class="javax.swing.JTable" binding="tablaTelas">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </tabbedpane>
+            </children>
+          </grid>
+          <grid id="7152e" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Pedidos"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="5159c" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <name value=""/>
+                </properties>
+                <border type="none" title="Consultas"/>
+                <children>
+                  <component id="67b54" class="javax.swing.JButton" binding="botonRegistrarPedido">
+                    <constraints/>
+                    <properties>
+                      <background color="-11106172"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Registrar"/>
+                    </properties>
+                  </component>
+                  <component id="c647" class="javax.swing.JButton" binding="botonActualizarPedido">
+                    <constraints/>
+                    <properties>
+                      <background color="-9470567"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Actualizar"/>
+                    </properties>
+                  </component>
+                  <component id="917c2" class="javax.swing.JButton" binding="botonEliminarPedido">
+                    <constraints/>
+                    <properties>
+                      <background color="-7709849"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Eliminar"/>
+                    </properties>
+                  </component>
+                  <component id="ab839" class="javax.swing.JButton" binding="botonListarPedido">
+                    <constraints/>
+                    <properties>
+                      <background color="-5931329"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Listar"/>
+                    </properties>
+                  </component>
+                  <component id="caf96" class="javax.swing.JButton" binding="botonBuscarPedido">
+                    <constraints/>
+                    <properties>
+                      <background color="-5723546"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Buscar"/>
+                    </properties>
+                  </component>
+                  <component id="9ed87" class="javax.swing.JButton" binding="botonLimpiarPedido">
+                    <constraints/>
+                    <properties>
+                      <background color="-4602936"/>
+                      <font name="Consolas" size="16"/>
+                      <foreground color="-1"/>
+                      <text value="Limpiar"/>
+                      <toolTipText value="Limpia los campos de texto."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="5fb4e" layout-manager="GridLayoutManager" row-count="2" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="Datos"/>
+                <children>
+                  <component id="56ce7" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Producto:"/>
+                    </properties>
+                  </component>
+                  <component id="21bbc" class="javax.swing.JComboBox" binding="cajaDeSeleccion">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="14" style="1"/>
+                    </properties>
+                  </component>
+                  <component id="f5d66" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Color:"/>
+                    </properties>
+                  </component>
+                  <component id="7682a" class="javax.swing.JTextField" binding="txtColorPedidos">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="4d1db" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Precio:"/>
+                    </properties>
+                  </component>
+                  <component id="3f8e6" class="javax.swing.JTextField" binding="txtPrecioPedidos">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="ed309" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Estilo:"/>
+                    </properties>
+                  </component>
+                  <component id="89ce0" class="javax.swing.JTextField" binding="txtEstiloPedidos">
+                    <constraints>
+                      <grid row="1" column="7" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="5a342" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Código:"/>
+                    </properties>
+                  </component>
+                  <component id="8d9e6" class="javax.swing.JTextField" binding="txtCodigoPedidos">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="7536d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Comprador:"/>
+                    </properties>
+                  </component>
+                  <component id="17597" class="javax.swing.JTextField" binding="txtCompradorPedido">
+                    <constraints>
+                      <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <scrollpane id="a7ac7">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="Tabla"/>
+                <children>
+                  <component id="e5d1a" class="javax.swing.JTable" binding="tablaPedidos">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <scrollpane id="62e6f">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="2044d">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </scrollpane>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
